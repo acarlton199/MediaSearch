@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<base href="/">
+	<title>Angular App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+					crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-touch.min.js"></script>
+	<script src="libs/ui-bootstrap-2.4.0.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body ng-app="mediaApp">
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<a class="navbar-brand" href="/">Media Search</a>
+		</div>	
+	</nav>
+	<div class="container">
+		<div ng-view>
+		</div>
+	</div>
+	
+</body>
+
+</html>

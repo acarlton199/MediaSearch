@@ -1,0 +1,20 @@
+<h1>{{ media.Title }}</h1>
+<span class="small">Released: {{ media.Released }} - Running time: {{ media.Runtime }} - Genre: {{ media.Genre }}</span>
+<hr>
+
+<div class="row">
+	<img class="col-md-3 pull-left" ng-src="{{ media.Poster }}" alt="{{ media.Title}}" >
+	<div class="col-md-8">
+		<h3>Plot</h3>
+		<p>{{ media.Plot }}</p>
+
+		<h3>Director</h3>
+		<p>{{ media.Director }}</p>
+
+		<h3>Actors</h3>
+		<p>{{ media.Actors }}</p>
+		<a href="/">Return to search</a>
+	</div>
+</div>
+
+

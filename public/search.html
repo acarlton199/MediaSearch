@@ -1,0 +1,16 @@
+<input type="text" ng-model="searchString" placeholder="Search..." required>
+<button class="btn btn-primary" type="button" ng-click="search(searchString)">Search</button>
+<hr>
+<div class="row">
+	<div class="col-sm-6 col-md-4" ng-repeat="item in searchResults | orderBy: '-Year'">
+		<div class="thumbnail">
+			<a href="/media/{{ item.imdbID }}">
+				<img ng-src="{{ item.Poster == 'N/A' && 'img/default_poster.jpg' || item.Poster }}" alt="{{ item.Title }}">
+				<div class="caption">
+					<h3>{{ item.Title }}</h3>
+					<p>Released: {{ item.Year }}</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
